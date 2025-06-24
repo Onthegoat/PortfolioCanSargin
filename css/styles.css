@@ -1,0 +1,73 @@
+/* -- HOMESEITE + NABVBAR  -- */
+
+
+.hero {
+    background-color: #f8f8f8; 
+}
+
+/* Logo CSargin */
+
+
+/* Graue Box Home */
+.hero-home-box {
+    background-color: rgba(222, 222, 222, 0.5);
+    padding: 70px;
+    margin-bottom: 10px; /* Abstand hero spruch */
+    display: flex;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+/* Can Sargin */
+.can-sargin-pixel {
+    font-family: 'Micro 5', Regular;
+    font-size: 50px;
+    letter-spacing: 0.37em;
+    color: black;
+    line-height: 0.60; /* Abstand zwischen C-S */
+    text-transform: uppercase;
+}
+
+.can-pixel {
+    margin: 45px;
+}
+
+
+/* Gameboy */
+.gameboy-icon {
+    height: 110px;
+    width: 100px;
+    flex-shrink: 0;
+}
+
+
+.btn-container {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+}
+
+.hamburger-menu-icon {
+    background-color: black;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0.2rem;
+}
+
+.hamburger-menu-icon::before {
+    background-color: black;
+    position: absolute;
+    top: -1rem;
+    width: 100%;
+    height: 0.2rem;
+}
+
+.hamburger-menu-icon::after {
+    background-color: black;
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    height: 0.2rem;
+}
