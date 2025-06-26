@@ -1,3 +1,6 @@
+/*Font art*/
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Micro+5&display=swap");
+
 /* CSS Reset  */
 * {
     margin: 0;
@@ -14,7 +17,9 @@ li {
 }
 
 /* -- HOMESEITE + NABVBAR  -- */
-
+html {
+    font-family: "Inter", sans-serif;
+}
 
 .wrapper {
     margin: 0 250px;
@@ -23,14 +28,12 @@ li {
         width: 8rem;
         height: 8rem;
         flex-shrink: 0;
-        border-radius: 4.25rem;    
+        border-radius: 4.25rem;
         padding: 15px;
     }
 }
 
 .hero {
-    background-color: #f8f8f8;
-
     .container-hero-content {
         display: flex;
         justify-content: space-between;
@@ -39,14 +42,59 @@ li {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
             .hero-home-box {
-                background-color: rgba(249, 24, 24, 0.5);
-                padding: 70px;
-                margin-bottom: 10px; /* Abstand hero spruch */
+                position: relative;
+                background-color: rgba(214, 214, 214, 0.4);
+                padding: 110px;
+                margin-bottom: 40px; /* Abstand hero spruch */
                 display: flex;
-                max-width: 450px;
+                justify-content: center;
+                align-items: center;
+                max-width: 430px;
+                max-height: 250px;
                 box-sizing: border-box;
+
+                .can-pixel-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 45px;
+
+                    .can-pixel {
+                        font-size: 70px;
+                        letter-spacing: 0.37em;
+                        color: black;
+                        line-height: 0.6; /* Abstand zwischen C-S */
+                        font-family: "Micro 5";
+                    }
+                }
+
+                .gameboy-icon {
+                    position: absolute;
+                    left: 360px;
+                    height: 90px;
+                    width: 150px;
+                    padding-right: 22px;
+                }
+            }
+
+            .hero-spruch-1-UQC {
+                color: #284cff;
+                text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+                font-family: "Advent Pro";
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.54rem;
+
+                .Q {
+                    font-style: italic;
+                    font-weight: 500;
+                    margin-right: 20px;
+                }
             }
         }
     }
@@ -59,92 +107,64 @@ li {
 
         .link {
             border: 1px solid black;
-            width: 250px;
+            width: 350px;
             display: block;
-            padding: 15px;
+            padding: 18px;
             text-align: center;
             color: black;
-
-            &:hover {
-                background-color: rgba(194, 13, 13, 0.5);
-            }
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        li:nth-child(1) .link:hover {
+            background-color: rgba(31, 40, 226, 0.5);
+            color: #f8f8f8;
+        }
+        li:nth-child(2) .link:hover {
+            background-color: rgba(192, 32, 32, 0.5);
+            color: #f8f8f8;
+        }
+        li:nth-child(3) .link:hover {
+            background-color: #284cff;
+            color: #f8f8f8;
+        }
+        li:nth-child(4) .link:hover {
+            background-color: chartreuse;
+            color: #f8f8f8;
+        }
+        li:nth-child(5) .link:hover {
+            background-color: #cdc7e5;
+            color: #f8f8f8;
         }
     }
 }
 
+/*.btn-container {*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    position: absolute;*/
+/*    right: 20px;*/
+/*}*/
 
+/* .hamburger-menu-icon {*/
+/*    background-color: black;*/
+/*    display: block;*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    height: 0.2rem;*/
+/*}*/
 
-/* Can Sargin */
-.can-sargin-pixel {
-    font-family: "Micro 5", Regular;
-    font-size: 50px;
-    letter-spacing: 0.37em;
-    color: black;
-    line-height: 0.6; /* Abstand zwischen C-S */
-    text-transform: uppercase;
+/*.hamburger-menu-icon::before {*/
+/*    background-color: black;*/
+/*    position: absolute;*/
+/*    top: -1rem;*/
+/*    width: 100%;*/
+/*    height: 0.2rem;*/
+/*}*/
 
-        .can-pixel {
-            margin: 45px;
-        }
-
-
-        .Gameboy-icon {
-            height: 110px;
-            width: 100px;   
-            flex-shrink: 0;
-        }
-}
-
-
-.hero-spruch-1-UQC {
-    color: #284CFF;
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    font-family: "Advent Pro";
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.54rem;
-
-        .Q {
-            color: #284CFF;
-            font-family: "Advent Pro";
-            font-size: 2rem;
-            font-style: italic;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: 0.54rem;
-            margin-right: 20px;
-        }
-}
-
-.btn-container {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 20px;        
-}
-
-.hamburger-menu-icon {
-    background-color: black;
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0.2rem;
-}
-
-.hamburger-menu-icon::before {
-    background-color: black;
-    position: absolute;
-    top: -1rem;
-    width: 100%;
-    height: 0.2rem;
-}
-
-.hamburger-menu-icon::after {
-    background-color: black;
-    position: absolute;
-    top: 1rem;
-    width: 100%;
-    height: 0.2rem;
-}
+/*.hamburger-menu-icon::after {*/
+/*    background-color: black;*/
+/*    position: absolute;*/
+/*    top: 1rem;*/
+/*    width: 100%;*/
+/*    height: 0.2rem;*/
+/*} */
