@@ -39,13 +39,15 @@ li {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-top: 100px;
 
             .hero-home-box {
-                background-color: rgba(249, 24, 24, 0.5);
-                padding: 70px;
-                margin-bottom: 10px; /* Abstand hero spruch */
+                background-color: rgba(214, 214, 214, 0.4);
+                padding: 110px;
+                margin-bottom: 40px; /* Abstand hero spruch */
                 display: flex;
-                max-width: 450px;
+                max-width: 430px;
+                max-height: 250px;
                 box-sizing: border-box;
             }
         }
@@ -56,23 +58,40 @@ li {
         flex-direction: column;
         align-items: center;
         gap: 18px;
+        margin-top: 110px;
 
         .link {
             border: 1px solid black;
-            width: 250px;
+            width: 350px;
             display: block;
-            padding: 15px;
+            padding: 18px;
             text-align: center;
             color: black;
-
-            &:hover {
-                background-color: rgba(194, 13, 13, 0.5);
-            }
+            text-decoration: none;
+            transition: all 0.3s ease;
         }
+            li:nth-child(1) .link:hover {
+                background-color: rgba(31, 40, 226, 0.5);
+                color: #f8f8f8;
+            }
+            li:nth-child(2) .link:hover {
+                background-color: rgba(192, 32, 32, 0.5);
+                color: #f8f8f8;
+            }
+            li:nth-child(3) .link:hover {
+                background-color: #284CFF;
+                color: #f8f8f8;
+            }
+            li:nth-child(4) .link:hover {
+                background-color: chartreuse;
+                color: #f8f8f8;
+            }
+            li:nth-child(5) .link:hover {
+                background-color: coral;
+                color: #f8f8f8;
+            }
     }
 }
-
-
 
 /* Can Sargin */
 .can-sargin-pixel {
@@ -86,14 +105,15 @@ li {
         .can-pixel {
             margin: 45px;
         }
-
-
-        .Gameboy-icon {
-            height: 110px;
-            width: 100px;   
-            flex-shrink: 0;
-        }
 }
+
+.Gameboy-icon {
+    height: 90px;
+    width: 150px;   
+    flex-shrink: 0;
+    padding-right: 22px;
+}
+
 
 
 .hero-spruch-1-UQC {
