@@ -1,51 +1,128 @@
-/* -- HOMESEITE + NABVBAR  -- */
-
-
-.hero {
-    background-color: #f8f8f8; 
-}
-
-/* Logo CSargin */
-
-
-/* Graue Box Home */
-.hero-home-box {
-    background-color: rgba(222, 222, 222, 0.5);
-    padding: 70px;
-    margin-bottom: 10px; /* Abstand hero spruch */
-    display: flex;
-    max-width: 450px;
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* -- HOMESEITE + NABVBAR  -- */
+
+
+.wrapper {
+    margin: 0 250px;
+
+    .logo {
+        width: 8rem;
+        height: 8rem;
+        flex-shrink: 0;
+        border-radius: 4.25rem;    
+        padding: 15px;
+    }
+}
+
+.hero {
+    background-color: #f8f8f8;
+
+    .container-hero-content {
+        display: flex;
+        justify-content: space-between;
+
+        .home-linke-seite {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .hero-home-box {
+                background-color: rgba(249, 24, 24, 0.5);
+                padding: 70px;
+                margin-bottom: 10px; /* Abstand hero spruch */
+                display: flex;
+                max-width: 450px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .nav-home-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+        .link {
+            border: 1px solid black;
+            width: 250px;
+            display: block;
+            padding: 15px;
+            text-align: center;
+            color: black;
+
+            &:hover {
+                background-color: rgba(194, 13, 13, 0.5);
+            }
+        }
+    }
+}
+
+
+
 /* Can Sargin */
 .can-sargin-pixel {
-    font-family: 'Micro 5', Regular;
+    font-family: "Micro 5", Regular;
     font-size: 50px;
     letter-spacing: 0.37em;
     color: black;
-    line-height: 0.60; /* Abstand zwischen C-S */
+    line-height: 0.6; /* Abstand zwischen C-S */
     text-transform: uppercase;
+
+        .can-pixel {
+            margin: 45px;
+        }
+
+
+        .Gameboy-icon {
+            height: 110px;
+            width: 100px;   
+            flex-shrink: 0;
+        }
 }
 
-.can-pixel {
-    margin: 45px;
+
+.hero-spruch-1-UQC {
+    color: #284CFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Advent Pro";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.54rem;
+
+        .Q {
+            color: #284CFF;
+            font-family: "Advent Pro";
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.54rem;
+            margin-right: 20px;
+        }
 }
-
-
-/* Gameboy */
-.gameboy-icon {
-    height: 110px;
-    width: 100px;
-    flex-shrink: 0;
-}
-
 
 .btn-container {
     width: 40px;
     height: 40px;
     position: absolute;
-    right: 20px;
+    right: 20px;        
 }
 
 .hamburger-menu-icon {
