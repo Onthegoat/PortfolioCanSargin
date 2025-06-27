@@ -39,18 +39,18 @@ html {
     justify-content: center;
     align-items: center;
 
-    .container-hero-content {
+    .container_hero_content {
         display: flex;
         justify-content: space-between;
         width: 100%;
 
-        .home-linke-seite {
+        .home_linke_seite {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            .hero-home-box {
+            .hero_home_box {
                 position: relative;
                 background-color: rgba(222, 222, 222, 0.61);
                 padding: 80px;
@@ -62,13 +62,13 @@ html {
                 /* max-height: 250px; */
                 /* box-sizing: border-box; */
 
-                .can-pixel-container {
+                .can_pixel_container {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     /* gap: 45px; */
 
-                    .can-pixel {
+                    .can_pixel {
                         font-size: 80px;
                         letter-spacing: 0.37em;
                         color: black;
@@ -77,14 +77,14 @@ html {
                     }
                 }
 
-                .gameboy-icon {
+                .gameboy_icon {
                     position: absolute;
                     left: 435px;
                     height: 120px;
                 }
             }
 
-            .hero-spruch-1-UQC {
+            .hero_spruch_1_UQC {
                 color: #284cff;
                 text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
                 font-family: "Advent Pro";
@@ -101,7 +101,7 @@ html {
                 }
             }
         }
-        .nav-home-button {
+        .nav_home_button {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -136,6 +136,31 @@ html {
             li:nth-child(5) .link:hover {
                 background-color: #cdc7e5;
                 color: #f8f8f8;
+            }
+        }
+    }
+}
+
+.übermich {
+    display: flex;
+    
+
+    .container_hero_about {
+        align-items: center;
+        
+
+        .übermich_oberer_berreich {
+        
+
+    
+            .begrüßungstag {
+        
+
+            }
+
+            .avatar_icon {
+            
+
             }
         }
     }
