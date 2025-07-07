@@ -19,17 +19,20 @@ li {
 /* -- HOMESEITE + NABVBAR  -- */
 html {
     font-family: "Inter", sans-serif;
+    font-size: 62.5%; /* Font normaliserung 10PX = 1rem */
 }
 
 .wrapper {
-    margin: 0 250px;
+    margin: 0 auto;
+    width: 1400px;
+    
 
     .logo {
         width: 8rem;
         height: 8rem;
         flex-shrink: 0;
         border-radius: 4.25rem;
-        padding: 15px;
+        padding: 1.5rem;
     }
 }
 
@@ -53,7 +56,7 @@ html {
             .hero_home_box {
                 position: relative;
                 background-color: rgba(222, 222, 222, 0.61);
-                padding: 80px;
+                padding: 8rem;
                 margin-bottom: 40px; /* Abstand hero spruch */
                 display: flex;
                 justify-content: center;
@@ -69,7 +72,7 @@ html {
                     /* gap: 45px; */
 
                     .can_pixel {
-                        font-size: 80px;
+                        font-size: 8rem;
                         letter-spacing: 0.37em;
                         color: black;
                         line-height: 0.6; /* Abstand zwischen C-S */
@@ -79,8 +82,8 @@ html {
 
                 .gameboy_icon {
                     position: absolute;
-                    left: 435px;
-                    height: 120px;
+                    left: 43.2rem;
+                    height: 12rem;
                 }
             }
 
@@ -109,13 +112,15 @@ html {
 
             .link {
                 border: 1px solid black;
-                width: 350px;
+                width: 330px;
                 display: block;
                 padding: 18px;
                 text-align: center;
                 color: black;
                 text-decoration: none;
-                transition: all 0.3s ease;
+                transition: all 0.5s ease-in-out;
+                font-size: 1.6rem;
+                font-weight: 500;
             }
             li:nth-child(1) .link:hover {
                 background-color: rgba(31, 40, 226, 0.5);
@@ -143,8 +148,8 @@ html {
 
 .übermich {
     display: flex;
-    margin-top: 50px;
-
+    margin-top: 6rem;
+    
     .container_hero_about {
         align-items: center;
         
@@ -155,39 +160,240 @@ html {
             justify-content: space-between;
 
             .about_text_box {
-                max-width: 70%;
+                max-width: 50%;
             }
 
 
-            .begrüßungstag {
+                .begrüßungstag {
+                    font-size: 3rem;
+                    margin-bottom: 6rem;
 
+                }
 
-            }
+                    .about-text-oben-1 {
+                        display: flex;
+                        margin-bottom: 5rem;
+                        font-size: 2.1rem;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        
+                    }
 
-            .avatar_icon {
-
-
-            }
+                        .about-text-oben-2 {
+                            display: flex;
+                            font-size: 2.1rem;
+                            line-height: 1.5;
+                            font-weight: 400;
+                        }
+                            
         }
 
-        .übermich_unterrer_berreich {
+                        .avatar_icon {
+                            margin-bottom: 2rem;
+                            margin-top: -4rem;
+                        }
+        }
+
+        /* .übermich_unterrer_berreich {
                 
             p {
                 font-weight: 400;
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
-                letter-spacing: 0.35rem;
+                letter-spacing: 0.15rem;
 
                 .fb_style {
                     color: #284cff;
                     font-weight: bold;
-                    ;
-                    
-                    
-                    
+                    padding-left: 0.5rem;
+                    letter-spacing: 0.3rem;
+                       
                 }
+            }
+        } */
+}
+
+
+.fähigkeiten {
+    margin-top: 20rem;
+    min-height: 80vh; 
+
+    
+    .container-hero-skill {
+        font-size: 2rem;
+        overflow: hidden;
+
+        
+        .title {
+            text-align: center;
+        }
+        
+        
+        .fähigkeiten-items {
+            display: flex; 
+            justify-content: center;
+            margin-top: 10rem; 
+
+
+        
+            
+            
+            .fähigkeiten-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 120px;
+                width: 120px;
+                
+                
+
+                .img_box {
+
+                }
+
+                .text_box {
+                    
+                    .upper {
+                        text-transform: uppercase;
+                        font-size: 2rem;
+                    }
+
+                    .capit {
+                        text-transform: capitalize;
+                        font-size: 2rem;
+                    }
+                }
+
             }
         }
     }
 }
+
+.projekte {
+   margin-top: 20rem;
+
+
+.glider div {
+    padding: 1rem;
+    text-align: center;
+}
+
+.glider img {
+    width: 35rem;
+    border-radius: 0.5rem;
+    }
+
+.glider-prev,
+.glider-next {
+    background: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+
+.glider-prev {
+    left: 0;
+}
+
+.glider-next {
+    right: 0;
+}
+
+.projekt-content-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.projekt-info-box {
+    margin-top: 8rem;
+}
+
+.carousel-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    max-width: 600px;
+}
+
+#app-name {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#app-beschreibung {
+  font-size: 2rem;
+  display: flex;
+  margin-top: 5rem;
+
+}
+
+.glider {
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+}
+
+}
+
+.kontakt-footer  {
+    margin-top: 10rem;
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}  
+
+.footer-copyright {
+    text-align: center;
+    background-color: rgb(214, 212, 234);
+    width: 80%;
+    height: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    padding-top: 2.5px;
+
+   
+    
+}
+
+.linker-footer-berreich {
+    width: 21rem;
+    height: 8rem;
+    flex-shrink: 0;
+    border: 1px solid black;
+
+    color: #0B0B0B;
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: regular;
+    font-weight: regular;
+    
+}
+
+.rechter-footer-berreich {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+
+
+
+
+}
+
