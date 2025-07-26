@@ -1,0 +1,72 @@
+.projekte {
+   margin-top: 20rem;
+
+
+.glider div {
+    padding: 1rem;
+    text-align: center;
+}
+
+.glider img {
+    width: 35rem;
+    border-radius: 0.5rem;
+    }
+
+.glider-prev,
+.glider-next {
+    background: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+
+.glider-prev {
+    left: 0;
+}
+
+.glider-next {
+    right: 0;
+}
+
+.projekt-content-row {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 2rem; */
+    align-items: center
+    
+}
+
+.projekt-info-box {
+    width: 50%;
+}
+
+.carousel-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* min-width: 350px; */
+    /* max-width: 600px; */
+}
+
+#app-name {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#app-beschreibung {
+    padding-left: 10rem;
+    font-size: 2.2rem;
+    display: flex;
+
+}
+
+.glider {
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+}
+
+}

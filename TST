@@ -1,0 +1,47 @@
+.fähigkeiten {
+    margin-top: 20rem;
+    /* min-height: 80vh; */
+
+    .container-hero-skill {
+        font-size: 2rem;
+        /* overflow: hidden; */
+
+        .title {
+            text-align: center;
+        }
+
+        .fähigkeiten-items {
+            display: flex;
+            justify-content: center;
+            margin-top: 10rem;
+            flex-wrap: wrap;
+            gap: 5rem;
+            width: 95%;
+            /* max-width: 1330px; */
+
+            .fähigkeiten-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 12rem;
+                width: 12rem;
+
+                .text_box {
+                    .upper {
+                        text-transform: uppercase;
+                        font-size: 2rem;
+                    }
+
+                    .capit {
+                        text-transform: capitalize;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+ 

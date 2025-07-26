@@ -1,0 +1,161 @@
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container_hero_content {
+        display: flex;
+        /* justify-content: space-between; */
+        width: 100%;
+        gap: 35%;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+         @media screen and (max-width: 1200px) {
+                margin-bottom: 5rem;
+                justify-content: space-between;
+
+                
+            }
+
+
+        .home_linke_seite {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2rem;
+/* 
+            @media screen and (max-width: 1200px) {
+                margin-bottom: 5rem;
+
+            } */
+
+            .hero_home_box {
+                position: relative;
+                background-color: rgba(222, 222, 222, 0.61);
+                padding: 8rem;
+                margin-bottom: 40px; /* Abstand hero spruch */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .can_pixel_container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    /* gap: 45px; */
+
+                    .can_pixel {
+                        font-size: 8rem;
+                        letter-spacing: 0.37em;
+                        color: black;
+                        line-height: 0.6; /* Abstand zwischen C-S */
+                        font-family: "Micro 5";
+                    }
+                }
+
+                .gameboy_icon {
+                    position: absolute;
+                    left: 43.2rem;
+                    height: 12rem;
+                }
+            }
+
+            .hero_spruch_1_UQC {
+                color: #284cff;
+                text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+                font-family: "Advent Pro";
+                font-size: 3rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.54rem;
+
+                .Q {
+                    font-style: italic;
+                    font-weight: 500;
+                    margin-right: 2rem;
+                }
+            }
+        }
+        .nav_home_button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+
+            .link {
+                border: 1px solid black;
+                width: 33rem;
+                display: block;
+                padding: 1.8rem;
+                text-align: center;
+                color: black;
+                text-decoration: none;
+                transition: all 0.5s ease-in-out;
+                font-size: 1.7rem;
+                font-weight: 500;
+            }
+            li:nth-child(1) .link:hover {
+                background-color: rgba(31, 40, 226, 0.5);
+                color: #f8f8f8;
+            }
+            li:nth-child(2) .link:hover {
+                background-color: rgba(192, 32, 32, 0.5);
+                color: #f8f8f8;
+            }
+            li:nth-child(3) .link:hover {
+                background-color: #284cff;
+                color: #f8f8f8;
+            }
+            li:nth-child(4) .link:hover {
+                background-color: chartreuse;
+                color: #f8f8f8;
+            }
+            li:nth-child(5) .link:hover {
+                background-color: #cdc7e5;
+                color: #f8f8f8;
+            }
+        }
+    }
+}
+
+
+/* @media screen and (max-width: 1250px) {
+    .hero {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        .container_hero_content {
+            justify-content: space-between;
+        }
+    }
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* } */

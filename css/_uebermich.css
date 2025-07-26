@@ -1,0 +1,87 @@
+.uebermich {
+    display: flex;
+    margin-top: 6rem;
+
+    .container_hero_about {
+        /* align-items: center; */
+        
+        .uebermich_oberer_berreich {
+            display: flex;
+            justify-content: space-between;
+
+            .about_text_box {
+                max-width: 50%;
+            }
+        }
+
+        .begrüßungstag {
+            font-size: 3rem;
+            margin-bottom: 6rem;
+        }
+    }
+
+    .about_text_oben_1 {
+        display: flex;
+        margin-bottom: 5rem;
+        font-size: 2.1rem;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .about_text_oben_2 {
+        display: flex;
+        font-size: 2.1rem;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .avatar_icon {
+        margin-bottom: 2rem;
+        margin-top: -4rem;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .uebermich {
+        .container_hero_about {
+            .uebermich_oberer_berreich {
+                flex-direction: column-reverse;
+                align-items: center;
+
+                .about_text_box {
+                    max-width: 90%;
+                }
+            }
+        }
+
+        .begrüßungstag {
+            margin-bottom: 1.3rem;
+            margin-top: -1.5rem;
+        }
+        
+        .about_text_oben_1 {
+            display: flex;
+            margin-bottom: 0.5rem;
+            font-size: 1.9rem;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+        
+        .about_text_oben_2 {
+            display: flex;
+            margin-bottom: 0.5rem;
+            font-size: 1.9rem;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+
+        .avatar_icon {
+            flex-direction: column-reverse;
+            align-items: center;
+            height: 35rem;
+        }
+    }
+}
+
+

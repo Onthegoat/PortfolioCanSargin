@@ -1,0 +1,120 @@
+.kontakt-footer {
+    margin-top: 10rem;
+    background-color: rgba(244, 248, 255, 0.343);
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .footer-copyright {
+        margin-top: 1.5rem;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        font-size: 1.1rem;
+    }
+
+    .linker-footer-berreich {
+        font-family: Inter;
+        font-size: 2.5rem;
+
+        .links-text-1 {
+            font-size: 2.5rem;
+            margin-bottom: 3.5rem;
+            margin-top: 1rem;
+
+            .dato {
+                opacity: 0.4;
+                color: #3bf;
+                font-family: Inter;
+                font-size: 1.7rem;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            .dk {
+                color: black;
+                font-size: 1.7rem;
+            }
+
+            .avl {
+                margin-left: 6.5rem;
+                font-size: 2.3rem;
+                letter-spacing: 0rem;
+            }
+
+            .kp {
+                margin-left: 6rem;
+                font-size: 2.4rem;
+                letter-spacing: 0.1rem;
+            }
+        }
+
+        .links-text-2 {
+            display: flex;
+            font-family: "Inter";
+            font-size: 4rem;
+            letter-spacing: 0.8rem;
+            opacity: 0.8;
+            font-weight: 200;
+        }
+    }
+
+    .rechter-footer-berreich {
+        letter-spacing: 0.3rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        a {
+            font-size: 3.2rem;
+            text-decoration: underline;
+            color: black;
+            margin-top: 1rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+
+            .li {
+                height: 3rem;
+            }
+
+            .gh {
+                height: 3rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .kontakt-footer {
+        .footer-container {
+            display: flex;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+    
