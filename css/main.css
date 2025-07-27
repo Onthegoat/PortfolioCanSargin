@@ -1,10 +1,13 @@
 /*Font art*/
 @import url("_fonts.css");
+@import url("_header.css");
 @import url("_hero.css");
 @import url("_uebermich.css");
-@import url("_faehigkeiten.css");
-@import url("_projekte.css");
+/* @import url("_faehigkeiten.css"); */
+/* @import url("_projekte.css"); */
 @import url("_kontakt-footer.css");
+
+
 
 /* CSS Reset  */
 * {
@@ -21,19 +24,16 @@ li {
     list-style: none;
 }
 
-/* -- HOMESEITE + NABVBAR  -- */
 html {
     font-family: "Inter", sans-serif;
     font-size: 62.5%; /* Font normaliserung 10PX = 1rem */
+    min-width: 570px; /* Minimum width for the site */
 }
 
 .wrapper {
     margin: 0 auto;
     max-width: 1400px;
-
-    .logo {
-        width: 8rem;
-        height: 8rem;
-        padding: 1.5rem;
-    }
+    padding: 0 2rem;
+    
 }
+ 

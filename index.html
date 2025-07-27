@@ -5,266 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Can Sargin - Portfolio</title>
-
+    <link rel="icon" type="image/x-icon" href="./assets/img/homepage/c_logo.svg">
 
     <!-- Glider CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"> -->
 
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <!-- <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@1,700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap"> -->
-
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body class="wrapper">
-
-    <!-- HEADER NAVBAR logo-->
-    <header class="header">
-        <div class="container">
-            <!--Logo-->
-            <h2 class="logo">
-                <img src="assets/img/homepage/cansarginlogo.svg" alt="CSarginLogo">
-            </h2>
-
-
+    <header id="home" class="header">
+        <div class="logo_container">
+            <img class="logo" src="./assets/img/homepage/c_logo.svg" alt="CSarginLogo">
         </div>
     </header>
 
-
-
-
-    <!--HOMESEITE-->
-    <section id="home" class="hero">
-        <div class="container_hero_content">
-            <!--LINKER BERREICH HOME-->
+    <section class="hero">
+        <div class="hero_content_container">
             <div class="home_linke_seite">
                 <div class="hero_home_box">
                     <div class="can_pixel_container">
-                        <span class="can_pixel">CAN</span>
-                        <span class="can_pixel">SARGIN</span>
+                        <span class="can_pixel">can</span>
+                        <span class="can_pixel">sargin</span>
                     </div>
-
                     <img src="assets/img/homepage/gameboy.svg" alt="gameboyicon" class="gameboy_icon">
                 </div>
-
                 <h3 class="hero_spruch_1_UQC">
-                    <span>Umschüler,</span><span class="Q">Quereinsteiger,</span><span>Coder</span>
+                    <span>Umschüler,</span>
+                    <span class="strong">Quereinsteiger,</span>
+                    <span>Coder</span>
                 </h3>
             </div>
-
-
             <nav class="navbar">
-
-                <ul class="js_nav_links nav_home_button">
+                <!-- TODO: verlinkung noch einbauen -->
+                <ul class="js_nav_links nav_buttons">
                     <li><a class="link" href="#home">HOME</a></li>
                     <li><a class="link" href="#uebermich">ÜBER MICH</a></li>
-                    <li><a class="link" href="#fähigkeiten">FÄHIGKEITEN</a></li>
-                    <li><a class="link" href="#projekte">PROJEKTE</a></li>
-                    <li><a class="link" href="#kontakt">KONTAKT</a></li>
+                    <li><a class="link" href="#skills">FÄHIGKEITEN</a></li>
+                    <li><a class="link" href="#projects">PROJEKTE</a></li>
+                    <li><a class="link" href="#contact">KONTAKT</a></li>
                 </ul>
-
             </nav>
-
         </div>
-
     </section>
 
 
-    <section id="about" class="uebermich">
-        <!-- ÜBER MICH SEITE -->
-        <div class="container_hero_about">
-            <!--LINKER BERREICH ÜBER MICH -->
 
-            <div class="uebermich_oberer_berreich">
-                <div class="about_text_box">
-                    <h2 class="begrüßungstag">Hey, Ich bin der Can 👋</h2>
-                    <p class="about_text_oben_1">
-                        Die IT-Welt hat mich schon seit meiner Kindheit fasziniert. Bereits mit 8 baute ich meinen
-                        ersten PC zusammen, was mein Interesse an Technik geweckt hat.
-                        Von da an wollte ich verstehen, wie Computer und Konsolen funktionieren, begann Hardware zu
-                        modifizieren und interessierte mich für die Modding-Szene.
-                        Oft war ich auch der Erste im Bekanntenkreis, der bei technischen Problemen um Rat gefragt
-                        wurde.
-                    </p>
+    <section id="uebermich" class="uebermich">
 
-                    <p class="about_text_oben_2">
-                        Derzeit als Umschüler begeistert mich besonders die Entwicklung von Apps und Websites – von
-                        der Ideenfindung und dem Brainstorming bis zur technischen Realisierung.
-                    </p>
-                </div>
+        <div class="uebermich_oberer_berreich">
+            <div class="about_text_box">
+                <h2 class="begrüßungstag">Hey, Ich bin der Can 👋</h2>
+                <p class="about_text">
+                    Die IT-Welt hat mich schon seit meiner Kindheit fasziniert. Bereits mit 8 baute ich meinen
+                    ersten PC zusammen, was mein Interesse an Technik geweckt hat.
+                    Von da an wollte ich verstehen, wie Computer und Konsolen funktionieren, begann Hardware zu
+                    modifizieren und interessierte mich für die Modding-Szene.
+                    Oft war ich auch der Erste im Bekanntenkreis, der bei technischen Problemen um Rat gefragt
+                    wurde.
+                </p>
+                <p class="about_text">
+                    Derzeit als Umschüler begeistert mich besonders die Entwicklung von Apps und Websites – von
+                    der Ideenfindung und dem Brainstorming bis zur technischen Realisierung.
+                </p>
+            </div>
+            <div class="img_container">
                 <img src="/assets/img/about/avatar.svg" alt="avatar" class="avatar_icon">
-
             </div>
-
-
         </div>
 
     </section>
 
-    <!-- TODO: SVG amen anpassen und gitigonore -mediaquerry - lajos teams chat- und section projekt  -->
+    <footer id="contact" class="kontakt_footer">
+        <div class="footer_container">
+            <div class="linker_footer_berreich">
+                <p class="links_text_1">
+                    <span class="kp">Kein Profi</span>
+                    <span class="dk">(</span>
+                    <span class="dato">-dato</span>
+                    <span class="dk">).</span><br>
 
-    <section id="skills" class="faehigkeiten">
-        <!-- FÄHGIGKEITEN SEITE-->
-        <div class="container-hero-skill">
-            <h2 class="title">
-                Meine Projekte und die dabei angewandten Programmiersprachen und Tools:
-            </h2>
-
-            <div class="faehigkeiten-items">
-
-                <div class="faehigkeiten-box" id="skill_html">
-                    <div class="img_box">
-                        <img src="./assets/img/skills/html.svg" alt="html_icon">
-                    </div>
-                    <div class="text_box">
-                        <h2 class="text  upper">html</h2>
-                    </div>
-                </div>
-
-                <div class="faehigkeiten-box" id="skill_css">
-                    <div class="img_box">
-                        <img src="./assets/img/skills/css.svg" alt="css_icon">
-                    </div>
-                    <div class="text_box">
-                        <h2 class="text  upper">css</h2>
-                    </div>
-                </div>
-
-                <div class="faehigkeiten-box" id="skill_js">
-                    <div class="img_box">
-                        <img src="./assets/img/skills/js.svg" alt="javascript_icon">
-                    </div>
-                    <div class="text_box">
-                        <h2 class="text  upper">js</h2>
-                    </div>
-                </div>
-
-                <div class="faehigkeiten-box" id="skill_java">
-                    <div class="img_box">
-                        <img src="./assets/img/skills/java.svg" alt="java_icon">
-                    </div>
-                    <div class="text_box">
-                        <h2 class="text  capit">java</h2>
-                    </div>
-                </div>
-
-                <div class="faehigkeiten-box" id="skill_python">
-                    <div class="img_box">
-                        <img src="./assets/img/skills/python.svg" alt="python_icon">
-                    </div>
-                    <div class="text_box">
-                        <h2 class="text  capit">python</h2>
-                    </div>
-                </div>
-
-                <div class="faehigkeiten-box" id="skill_figma">
-                    <div class="img_box">
-                        <img src="./assets/img/skills/figma.svg" alt="python_icon">
-                    </div>
-                    <div class="text_box">
-                        <h2 class="text  capit">figma</h2>
-                    </div>
-                </div>
-
-                <div class="faehigkeiten-box" id="skill_git">
-                    <div class="img_box">
-                        <img src="/assets/img/skills/git.svg" alt="git_icon">
-                    </div>
-                    <div class="text_box">
-                        <h2 class="text  capit">git</h2>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projekte">
-        <!-- PROJEKTE SEITE-->
-        <div class="projekt-content-row">
-            <div class="projekt-info-box">
-                <p id="app-beschreibung"></p>
-            </div>
-
-            <div class="carousel-column">
-                <h2 id="app-name"></h2>
-                <div class="glider-contain">
-                    <button class="glider-prev">«</button>
-                    <div class="glider">
-
-                        <div class="projekt-slide" data-tech="python,git" data-name="CTF-Game"
-                            data-beschreibung="Ein Terminal Spiel in Capture the flag elementen.">
-                            <img src="assets/img/projekte/33.PNG" alt="Projekt 1">
-                        </div>
-
-                        <div class="projekt-slide" data-tech="html,figma,css,js" data-name="Portfolio-Seite"
-                            data-beschreibung="Meine akutelle Portfolio-Website mit in modernem Design.">
-                            <img src="assets/img/projekte/222.PNG" alt="Projekt 2">
-                        </div>
-
-                        <div class="projekt-slide" data-tech="java,git" data-name="Pin-Tool"
-                            data-beschreibung="Tool zum Pinnen von Programmen in Java.">
-                            <img src="assets/img/projekte/Unbenannt.PNG" alt="Projekt 3">
-                        </div>
-
-                    </div>
-
-                    <button class="glider-next">»</button>
-                    <div id="dots"></div>
-                </div>
-            </div>
-
-
-        </div>
-
-    </section>
-
-    <footer class="kontakt-footer">
-        <div class="footer-container">
-            <div class="linker-footer-berreich">
-                <p class="links-text-1">
-                    <span class="kp">Kein Profi </span> <span class="dk">(</span><span class="dato">-dato</span><span
-                        class="dk">)</span><br>
                     <span class="avl">Aber voll dabei.</span>
                 </p>
-                <p class="links-text-2">Let´s connect &lt;&gt;</p>
+                <p class="links_text_2">Let´s connect &lt;&gt;</p>
             </div>
-
-            <div class="rechter-footer-berreich">
-                <p>
-                    <a href="mail:cansargin@outlook.de">
-                        cansargin@outlook.de</a>
-                </p>
-
-                <div class="social-icons">
-
-                    <a href="https://linkedin.com/in/...">
+            <div class="rechter_footer_berreich">
+                <a class="email" href="mailto:cansargin@outlook.de">cansargin@outlook.de</a>
+                <div class="social_icons">
+                    <a href="#" target="_blank">
                         <img src="assets/img/kontakt/linkedin.svg" alt="linkedin" class="li">
                     </a>
-
-                    <a href="https://github.com/...">
+                    <a href="#" target="_blank">
                         <img src="assets/img/kontakt/github.svg" alt="github" class="gh">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer_copyright">
             <p>@ 2025 Can Sargin</p>
         </div>
-
     </footer>
 
-    <!-- Glider JS -->
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
-    <script src="javascript/script.js"></script>
+    <!-- Glider JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script> -->
+    <!-- <script src="javascript/script.js"></script> -->
 
 </body>
-
 
 </html>

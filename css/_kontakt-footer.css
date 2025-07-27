@@ -1,120 +1,92 @@
-.kontakt-footer {
+.kontakt_footer {
     margin-top: 10rem;
-    background-color: rgba(244, 248, 255, 0.343);
+    background-color: rgba(156, 157, 159, 0.343);
 
-    .footer-container {
+    .footer_container {
         display: flex;
         justify-content: space-between;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+        margin-bottom: 3rem;
 
-    .footer-copyright {
-        margin-top: 1.5rem;
-        text-align: center;
-        width: 80%;
-        margin-left: 10%;
-        font-size: 1.1rem;
-    }
-
-    .linker-footer-berreich {
-        font-family: Inter;
-        font-size: 2.5rem;
-
-        .links-text-1 {
-            font-size: 2.5rem;
-            margin-bottom: 3.5rem;
-            margin-top: 1rem;
-
-            .dato {
-                opacity: 0.4;
-                color: #3bf;
-                font-family: Inter;
-                font-size: 1.7rem;
-                font-style: normal;
-                font-weight: 400;
-            }
-
-            .dk {
-                color: black;
-                font-size: 1.7rem;
-            }
-
-            .avl {
-                margin-left: 6.5rem;
-                font-size: 2.3rem;
-                letter-spacing: 0rem;
-            }
-
-            .kp {
-                margin-left: 6rem;
-                font-size: 2.4rem;
-                letter-spacing: 0.1rem;
-            }
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
         }
 
-        .links-text-2 {
+        .linker_footer_berreich {
             display: flex;
-            font-family: "Inter";
-            font-size: 4rem;
-            letter-spacing: 0.8rem;
-            opacity: 0.8;
-            font-weight: 200;
-        }
-    }
-
-    .rechter-footer-berreich {
-        letter-spacing: 0.3rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-        a {
-            font-size: 3.2rem;
-            text-decoration: underline;
-            color: black;
-            margin-top: 1rem;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
+            flex-direction: column;
             gap: 4rem;
+            font-size: 1.7rem;
 
-            .li {
-                height: 3rem;
+            .links_text_1 {
+                text-align: center;
+
+                .kp {
+                    font-size: 2.4rem;
+                    letter-spacing: 0.1rem;
+                }
+
+                .dk {
+                    color: black;
+                    font-size: 1.7rem;
+                }
+
+                .dato {
+                    opacity: 0.4;
+                    color: #3bf;
+                    font-family: Inter;
+                    font-size: 1.7rem;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+
+                .avl {
+                    font-size: 2.3rem;
+                    letter-spacing: 0rem;
+                }
             }
 
-            .gh {
-                height: 3rem;
+            .links_text_2 {
+                text-align: center;
+                font-size: 2rem;
+                letter-spacing: 0.8rem;
+                opacity: 0.8;
+                font-weight: 200;
             }
         }
-    }
-}
-
-
-@media screen and (max-width: 800px) {
-    .kontakt-footer {
-        .footer-container {
+        .rechter_footer_berreich {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .email {
+                font-size: 3.2rem;
+                letter-spacing: 0.3rem;
+                color: black;
+                text-decoration: underline;
+            }
+
+            .social_icons {
+                display: flex;
+                gap: 2.5rem;
+
+                img {
+                    width: 3rem;
+                    height: 3rem;
+
+                    &:hover {
+                        transform: scale(1.4);
+                    }
+                }
+            }
         }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .footer_copyright {
+        text-align: center;
+        margin-bottom: 2rem;
     }
 }
-    
