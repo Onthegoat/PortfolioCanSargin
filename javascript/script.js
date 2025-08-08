@@ -20,7 +20,11 @@ function updateProjektInfo(index) {
     const beschreibung = current.dataset.beschreibung;
 
     document.getElementById("app-name").textContent = name;
-    document.getElementById("app-beschreibung").innerHTML = beschreibung + ' <a href="' + current.getAttribute("link") + '" target="_blank">Github Link</a>';
+    document.getElementById("app-beschreibung").innerHTML =
+        beschreibung +
+        ' <a href="' +
+        current.getAttribute("link") +
+        '" target="_blank">Github Link</a>';
 }
 
 // Beim Slide-Wechsel Infos aktualisieren

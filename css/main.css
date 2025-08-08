@@ -7,9 +7,6 @@
 @import url("_projekte.css");
 @import url("_kontakt-footer.css");
 
-
-
-
 /* CSS Reset  */
 * {
     margin: 0;
@@ -35,14 +32,13 @@ html {
     margin: 0 auto;
     max-width: 1400px;
     padding: 0 2rem;
-    
 }
- 
+
 /* === SECTION-SPACING === */
 section + section {
-  margin-top: 8rem;
+    margin-top: 8rem;
 }
 
 section {
-  scroll-margin-top: 6rem;
+    scroll-margin-top: 6rem;
 }
