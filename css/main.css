@@ -1,11 +1,12 @@
-/*Font art*/
+/*IMPORTS CSS*/
 @import url("_fonts.css");
 @import url("_header.css");
 @import url("_hero.css");
 @import url("_uebermich.css");
-/* @import url("_faehigkeiten.css"); */
-/* @import url("_projekte.css"); */
+@import url("_faehigkeiten.css");
+@import url("_projekte.css");
 @import url("_kontakt-footer.css");
+
 
 
 
@@ -37,3 +38,11 @@ html {
     
 }
  
+/* === SECTION-SPACING === */
+section + section {
+  margin-top: 8rem;
+}
+
+section {
+  scroll-margin-top: 6rem;
+}

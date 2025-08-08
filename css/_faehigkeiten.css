@@ -1,52 +1,38 @@
 .faehigkeiten {
-    margin-top: 20rem;
-    overflow: visible;
-
-    .container-hero-skill {
+    height: 45vh;
+    .faehigkeiten_container {
+        /* position: sticky; */
+        /* top: 20px; */
         font-size: 2rem;
-        overflow: visible;
 
         .title {
-            text-align: center;
-            margin-bottom: 10rem;
-            overflow: visible;
+            text-align: center;     
+            margin-bottom: 10%;
         }
 
-        .faehigkeiten-items {
-            position: sticky;
-            overflow: visible;
+        .faehigkeiten_items {
             display: flex;
             justify-content: center;
-            margin-top: 10rem;
-            /* top: 20px; */
             flex-wrap: wrap;
             gap: 2.5rem;
+            
 
-            .faehigkeiten-box {
+            .faehigkeiten_box {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
                 height: 12rem;
                 width: 12rem;
-                overflow: visible;
 
-                /* .img_box {
+                .upper {
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                }
 
-                } */
-
-                .text_box {
-                    overflow: visible;
-
-                    .upper {
-                        text-transform: uppercase;
-                        font-size: 2rem;
-                    }
-
-                    .capit {
-                        text-transform: capitalize;
-                        font-size: 2rem;
-                    }
+                .capit {
+                    text-transform: capitalize;
+                    font-size: 2rem;
                 }
             }
         }
