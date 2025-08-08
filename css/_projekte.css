@@ -1,72 +1,78 @@
 .projekte {
-   margin-top: 20rem;
-
-
-.glider div {
-    padding: 1rem;
-    text-align: center;
-}
-
-.glider img {
-    width: 35rem;
-    border-radius: 0.5rem;
+    .glider div {
+        padding: 1rem;
+        text-align: center;
     }
 
-.glider-prev,
-.glider-next {
-    background: #fff;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 3rem;
-    cursor: pointer;
-    margin-top: 4rem;
-}
+    .glider img {
+        width: 35rem;
+        border-radius: 0.5rem;
+    }
 
-.glider-prev {
-    left: 0;
-}
+    .glider-prev,
+    .glider-next {
+        background: #fff;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 3rem;
+        cursor: pointer;
+        margin-top: 4rem;
+    }
 
-.glider-next {
-    right: 0;
-}
+    .projekt-content-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 800px) {
+            flex-direction: column-reverse;
+            gap: 4rem;
+        }
+    }
 
-.projekt-content-row {
-    display: flex;
-    justify-content: center;
-    /* margin-top: 2rem; */
-    align-items: center
-    
-}
+    .projekt-info-box {
+        width: 50%;
+    }
 
-.projekt-info-box {
-    width: 50%;
-}
+    .carousel-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.carousel-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* min-width: 350px; */
-    /* max-width: 600px; */
-}
+    #app-name {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
 
-#app-name {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-}
+    #app-beschreibung {
+        font-size: 2.2rem;
+        /* text-align: center; */
+        gap: 3rem;
+        display: flex;
+        flex-direction: column;
 
-#app-beschreibung {
-    padding-left: 10rem;
-    font-size: 2.2rem;
-    display: flex;
+        a {
+            color: black;
+            width: 150px;
+            background: white;
+            border: 1px solid black;
+            padding: 0.5rem 0.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+            
+        }
 
-}
+        a:hover {
+            background: black;
+            color: white;
+        }
+    }
 
-.glider {
-    width: 100%;
-    min-width: 320px;
-    max-width: 500px;
-}
-
+    .glider {
+        width: 100%;
+        min-width: 320px;
+        max-width: 500px;
+    }
 }

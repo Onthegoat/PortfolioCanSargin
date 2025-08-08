@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/homepage/c_logo.svg">
 
     <!-- Glider CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -20,7 +20,8 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section id="home" class="home">
+        <!-- HOMEPAGE SEITE -->
         <div class="hero_content_container">
             <div class="home_linke_seite">
                 <div class="hero_home_box">
@@ -41,9 +42,9 @@
                 <ul class="js_nav_links nav_buttons">
                     <li><a class="link" href="#home">HOME</a></li>
                     <li><a class="link" href="#uebermich">ÜBER MICH</a></li>
-                    <li><a class="link" href="#skills">FÄHIGKEITEN</a></li>
-                    <li><a class="link" href="#projects">PROJEKTE</a></li>
-                    <li><a class="link" href="#contact">KONTAKT</a></li>
+                    <li><a class="link" href="#faehigkeiten">FÄHIGKEITEN</a></li>
+                    <li><a class="link" href="#projekte">PROJEKTE</a></li>
+                    <li><a class="link" href="#kontakt">KONTAKT</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,8 +53,8 @@
 
 
     <section id="uebermich" class="uebermich">
-
-        <div class="uebermich_oberer_berreich">
+        <!-- ABOUT ME SEITE -->
+        <div class="uebermich_container">
             <div class="about_text_box">
                 <h2 class="begrüßungstag">Hey, Ich bin der Can 👋</h2>
                 <p class="about_text">
@@ -76,7 +77,90 @@
 
     </section>
 
-    <footer id="contact" class="kontakt_footer">
+
+    <section id="faehigkeiten" class="faehigkeiten">
+        <!-- FÄHGIGKEITEN SEITE -->
+        <div class="faehigkeiten_container">
+            <h2 class="title">
+                Meine Projekte und die dabei angewandten Programmiersprachen und Tools:
+            </h2>
+            <div class="faehigkeiten_items">
+                <div class="faehigkeiten_box" id="skill_html">
+                    <img src="./assets/img/skills/html.svg" alt="html_icon">
+                    <h2 class="text upper">html</h2>
+                </div>
+
+                <div class="faehigkeiten_box" id="skill_css">
+                    <img src="./assets/img/skills/css.svg" alt="css_icon">
+                    <h2 class="text upper">css</h2>
+                </div>
+
+                <div class="faehigkeiten_box" id="skill_js">
+                    <img src="./assets/img/skills/js.svg" alt="javascript_icon">
+                    <h2 class="text upper">js</h2>
+                </div>
+
+                <div class="faehigkeiten_box" id="skill_java">
+                    <img src="./assets/img/skills/java.svg" alt="java_icon">
+                    <h2 class="text capit">java</h2>
+                </div>
+
+                <div class="faehigkeiten_box" id="skill_python">
+                    <img src="./assets/img/skills/python.svg" alt="python_icon">
+                    <h2 class="text capit">python</h2>
+                </div>
+
+                <div class="faehigkeiten_box" id="skill_figma">
+                    <img src="./assets/img/skills/figma.svg" alt="figma_icon">
+                    <h2 class="text capit">figma</h2>
+                </div>
+
+                <div class="faehigkeiten_box" id="skill_git">
+                    <img src="./assets/img/skills/git.svg" alt="git_icon">
+                    <h2 class="text capit">git</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projekte" class="projekte">
+        <!-- PROJEKTE SEITE-->
+        <div class="projekt-content-row">
+            <div class="projekt-info-box">
+                <p id="app-beschreibung"></p>
+            </div>
+            <div class="carousel-column">
+                <h2 id="app-name"></h2>
+                <div class="glider-contain">
+                    <button class="glider-prev">«</button>
+                    <div class="glider">
+                        <div class="projekt-slide" data-tech="python,git" data-name="CTF-Game"
+                            data-beschreibung="Ein Terminal Spiel in Capture the flag elementen." link="https://github.com/Onthegoat/CTF_Game">
+                            <img src="assets/img/projekte/CTF_Game_Icon.PNG" alt="Projekt 1">
+                        </div>
+                        <div class="projekt-slide" data-tech="html,figma,css,js" data-name="Portfolio-Seite"
+                            data-beschreibung="Meine akutelle Portfolio-Website mit in modernem Design." link="https://github.com/Onthegoat/PortfolioCanSargin">
+                            <img src="assets/img/projekte/Portfolio_icon.PNG" alt="Projekt 2">
+                        </div>
+                        <div class="projekt-slide" data-tech="python,git" data-name="Pin-Tool"
+                            data-beschreibung="Tool zum Pinnen von Programmen in Java." link="https://github.com/Onthegoat/PinTool">
+                            <img src="assets/img/projekte/Pin_tool_icon.PNG" alt="Projekt 3">
+                        </div>
+                    </div>
+                    <button class="glider-next">»</button>
+                    <div id="dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer id="kontakt" class="kontakt_footer">
+        <!-- KONTAKT SEITE -->
         <div class="footer_container">
             <div class="linker_footer_berreich">
                 <p class="links_text_1">
@@ -108,8 +192,8 @@
 
 
     <!-- Glider JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script> -->
-    <!-- <script src="javascript/script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="javascript/script.js"></script>
 
 </body>
 
