@@ -32,7 +32,7 @@ Das Portfolio dient als persönliche Website, um Projekte, Fähigkeiten und Info
 
 -   Navigiere durch die verschiedenen Abschnitte der Website:
     -   **Home**: Begrüßung und Einführung
-    -   **Über mich**: Informationen über Can Sargin
+    -   **Über mich**: Ein kleines About me 
     -   **Fähigkeiten**: Darstellung der technischen Fähigkeiten
     -   **Projekte**: Präsentation abgeschlossener Projekte
     -   **Kontakt**: Möglichkeit zur Kontaktaufnahme
