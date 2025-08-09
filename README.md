@@ -1,10 +1,6 @@
-# Portfolio von Can Sargin
-
-Meine Portfolio Seite, welches meine Fähigkeiten, Projekte und persönliche Informationen auf einer modernen und responsiven Website zu präsentieren.
-
 ## Projektbeschreibung
 
-Das Portfolio dient als persönliche Website, um Projekte, Fähigkeiten und Informationen über mich zu präsentieren. Fokus auf modernes Design und Responsivität entwickelt, um auf verschiedenen Geräten optimal dargestellt zu werden.
+Das Portfolio dient als persönliche Website, um Projekte, Fähigkeiten und Informationen über mich zu präsentieren. Fokus auf modernes Design und Responsivität.
 
 ---
 
