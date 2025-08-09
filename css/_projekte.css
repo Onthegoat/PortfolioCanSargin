@@ -25,7 +25,7 @@
         align-items: center;
         @media screen and (max-width: 800px) {
             flex-direction: column-reverse;
-            gap: 4rem;
+            gap: 2rem;
         }
     }
 
@@ -51,6 +51,10 @@
         gap: 3rem;
         display: flex;
         flex-direction: column;
+        width: 90%;
+        @media screen and (max-width: 800px) {
+            width: 105%;
+        }
 
         a {
             color: black;
