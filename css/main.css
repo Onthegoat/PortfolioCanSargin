@@ -157,7 +157,7 @@ section {
 .home .hero_content_container .navbar .nav_buttons li {
   width: 100%;
 }
-.home .hero_content_container .navbar .nav_buttons li .link {
+.home .hero_content_container .navbar .nav_buttons li > .link {
   border: 1px solid black;
   display: block;
   padding: 1.5rem 2rem;
@@ -168,23 +168,23 @@ section {
   font-size: 1.7rem;
   font-weight: 500;
 }
-li:nth-child(1) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+.home .hero_content_container .navbar .nav_buttons li > .link:hover {
+  color: #f8f8f8;
+}
+.home .hero_content_container .navbar .nav_buttons li:nth-child(1) > .link:hover {
   background-color: rgba(31, 40, 226, 0.5);
 }
-li:nth-child(2) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+.home .hero_content_container .navbar .nav_buttons li:nth-child(2) > .link:hover {
   background-color: rgba(192, 32, 32, 0.5);
 }
-li:nth-child(3) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+.home .hero_content_container .navbar .nav_buttons li:nth-child(3) > .link:hover {
   background-color: #284cff;
 }
-li:nth-child(4) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+.home .hero_content_container .navbar .nav_buttons li:nth-child(4) > .link:hover {
   background-color: chartreuse;
 }
-li:nth-child(5) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+.home .hero_content_container .navbar .nav_buttons li:nth-child(5) > .link:hover {
   background-color: #cdc7e5;
-}
-.home .hero_content_container .navbar .nav_buttons li .link:hover {
-  color: #f8f8f8;
 }
 
 .kontakt_footer {

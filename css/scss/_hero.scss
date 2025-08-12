@@ -84,7 +84,8 @@
                 li {
                     width: 100%;
 
-                    & .link {
+                    // Style the anchor
+                    > .link {
                         border: 1px solid black;
                         display: block;
                         padding: 1.5rem 2rem;
@@ -96,29 +97,30 @@
                         font-size: 1.7rem;
                         font-weight: 500;
 
-                        li:nth-child(1) &:hover {
-                            background-color: rgba(31, 40, 226, 0.5);
-                        }
-
-                        li:nth-child(2) &:hover {
-                            background-color: rgba(192, 32, 32, 0.5);
-                        }
-
-                        li:nth-child(3) &:hover {
-                            background-color: #284cff;
-                        }
-
-                        li:nth-child(4) &:hover {
-                            background-color: chartreuse;
-                        }
-
-                        li:nth-child(5) &:hover {
-                            background-color: #cdc7e5;
-                        }
-
                         &:hover {
                             color: #f8f8f8;
                         }
+                    }
+
+                    // Per-item hover background colors
+                    &:nth-child(1) > .link:hover {
+                        background-color: rgba(31, 40, 226, 0.5);
+                    }
+
+                    &:nth-child(2) > .link:hover {
+                        background-color: rgba(192, 32, 32, 0.5);
+                    }
+
+                    &:nth-child(3) > .link:hover {
+                        background-color: #284cff;
+                    }
+
+                    &:nth-child(4) > .link:hover {
+                        background-color: chartreuse;
+                    }
+
+                    &:nth-child(5) > .link:hover {
+                        background-color: #cdc7e5;
                     }
                 }
             }
