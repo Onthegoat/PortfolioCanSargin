@@ -1,44 +1,384 @@
-/*IMPORTS CSS*/
-@import url("_fonts.css");
-@import url("_header.css");
-@import url("_hero.css");
-@import url("_uebermich.css");
-@import url("_faehigkeiten.css");
-@import url("_projekte.css");
-@import url("_kontakt-footer.css");
-
+@charset "UTF-8";
+/*Font art*/
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Micro+5&display=swap");
 /* CSS Reset  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 html {
-    font-family: "Inter", sans-serif;
-    font-size: 62.5%; /* Font normaliserung 10PX = 1rem */
-    min-width: 570px; /* Minimum width for the site */
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%; /* Font normaliserung 10PX = 1rem */
+  min-width: 570px; /* Minimum width for the site */
 }
 
 .wrapper {
-    margin: 0 auto;
-    max-width: 1400px;
-    padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 2rem;
 }
 
 /* === SECTION-SPACING === */
 section + section {
-    margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 section {
-    scroll-margin-top: 6rem;
+  scroll-margin-top: 6rem;
 }
+
+.faehigkeiten .faehigkeiten_container {
+  /* position: sticky; */
+  /* top: 20px; */
+  font-size: 2rem;
+}
+.faehigkeiten .faehigkeiten_container .title {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.faehigkeiten .faehigkeiten_container .faehigkeiten_items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.faehigkeiten .faehigkeiten_container .faehigkeiten_items .faehigkeiten_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 12rem;
+  width: 12rem;
+}
+.faehigkeiten .faehigkeiten_container .faehigkeiten_items .faehigkeiten_box .upper {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.faehigkeiten .faehigkeiten_container .faehigkeiten_items .faehigkeiten_box .capit {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.header {
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 10rem;
+  height: 5rem;
+}
+
+.home {
+  height: 77vh; /* von 94 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .hero_content_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .home .hero_content_container {
+    flex-wrap: wrap;
+    gap: 8rem;
+    justify-content: center;
+  }
+}
+.home .hero_content_container .home_linke_seite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.home .hero_content_container .home_linke_seite .hero_home_box {
+  position: relative;
+}
+.home .hero_content_container .home_linke_seite .hero_home_box .can_pixel_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(222, 222, 222, 0.61);
+  width: 100%;
+  max-width: 49rem;
+  height: 20rem;
+  padding: 2rem;
+}
+.home .hero_content_container .home_linke_seite .hero_home_box .can_pixel_container .can_pixel {
+  font-size: 8rem;
+  letter-spacing: 0.37em;
+  color: black;
+  line-height: 0.6;
+  font-family: "Micro 5";
+  text-transform: uppercase;
+}
+.home .hero_content_container .home_linke_seite .hero_home_box .gameboy_icon {
+  position: absolute;
+  top: 2.4rem;
+  left: 31.5rem;
+}
+.home .hero_content_container .home_linke_seite .hero_spruch_1_UQC {
+  text-align: center;
+  color: #284cff;
+  text-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.25);
+  font-family: "Advent Pro";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54rem;
+}
+.home .hero_content_container .home_linke_seite .hero_spruch_1_UQC .strong {
+  font-style: italic;
+  font-weight: 500;
+}
+.home .hero_content_container .navbar {
+  max-width: 380px;
+  width: 100%;
+}
+.home .hero_content_container .navbar .nav_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.home .hero_content_container .navbar .nav_buttons li {
+  width: 100%;
+}
+.home .hero_content_container .navbar .nav_buttons li .link {
+  border: 1px solid black;
+  display: block;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+li:nth-child(1) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+  background-color: rgba(31, 40, 226, 0.5);
+}
+li:nth-child(2) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+  background-color: rgba(192, 32, 32, 0.5);
+}
+li:nth-child(3) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+  background-color: #284cff;
+}
+li:nth-child(4) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+  background-color: chartreuse;
+}
+li:nth-child(5) .home .hero_content_container .navbar .nav_buttons li .link:hover {
+  background-color: #cdc7e5;
+}
+.home .hero_content_container .navbar .nav_buttons li .link:hover {
+  color: #f8f8f8;
+}
+
+.kontakt_footer {
+  margin-top: 10rem;
+  background-color: rgba(156, 157, 159, 0.207);
+}
+.kontakt_footer .footer_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 800px) {
+  .kontakt_footer .footer_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.kontakt_footer .footer_container .linker_footer_berreich {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  font-size: 1.7rem;
+}
+.kontakt_footer .footer_container .linker_footer_berreich .links_text_1 {
+  text-align: center;
+}
+.kontakt_footer .footer_container .linker_footer_berreich .links_text_1 .kp {
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+}
+.kontakt_footer .footer_container .linker_footer_berreich .links_text_1 .dk {
+  color: black;
+  font-size: 1.7rem;
+}
+.kontakt_footer .footer_container .linker_footer_berreich .links_text_1 .dato {
+  opacity: 0.4;
+  color: #3bf;
+  font-family: Inter;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.kontakt_footer .footer_container .linker_footer_berreich .links_text_1 .avl {
+  font-size: 2.3rem;
+  letter-spacing: 0rem;
+}
+.kontakt_footer .footer_container .linker_footer_berreich .links_text_2 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.8rem;
+  opacity: 0.8;
+  font-weight: 200;
+}
+.kontakt_footer .footer_container .rechter_footer_berreich {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.kontakt_footer .footer_container .rechter_footer_berreich .email {
+  font-size: 3.2rem;
+  letter-spacing: 0.3rem;
+  color: black;
+  text-decoration: underline;
+}
+.kontakt_footer .footer_container .rechter_footer_berreich .social_icons {
+  display: flex;
+  gap: 2.5rem;
+}
+.kontakt_footer .footer_container .rechter_footer_berreich .social_icons img {
+  width: 3rem;
+  height: 3rem;
+}
+.kontakt_footer .footer_container .rechter_footer_berreich .social_icons img:hover {
+  transform: scale(1.4);
+}
+.kontakt_footer .footer_copyright {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projekte .glider div {
+  padding: 1rem;
+  text-align: center;
+}
+.projekte .glider img {
+  width: 35rem;
+  border-radius: 0.5rem;
+}
+.projekte .glider-prev,
+.projekte .glider-next {
+  background: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+.projekte .projekt-content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .projekte .projekt-content-row {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
+.projekte .projekt-info-box {
+  width: 50%;
+}
+.projekte .carousel-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projekte #app-name {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.projekte #app-beschreibung {
+  font-size: 2.2rem;
+  /* text-align: center; */
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+@media screen and (max-width: 800px) {
+  .projekte #app-beschreibung {
+    width: 105%;
+  }
+}
+.projekte #app-beschreibung a {
+  color: black;
+  width: 150px;
+  background: white;
+  border: 1px solid black;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+.projekte #app-beschreibung a:hover {
+  background: black;
+  color: white;
+}
+.projekte .glider {
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+}
+
+.uebermich {
+  display: flex;
+}
+.uebermich .uebermich_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+}
+@media screen and (max-width: 800px) {
+  .uebermich .uebermich_container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+.uebermich .uebermich_container .about_text_box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.uebermich .uebermich_container .begrüßungstag {
+  font-size: 3rem;
+}
+.uebermich .uebermich_container .about_text {
+  font-size: clamp(1.2rem, 2vw, 2.5rem);
+  line-height: 1.5;
+  font-weight: 400;
+}
+@media screen and (max-width: 800px) {
+  .uebermich .uebermich_container .about_text {
+    font-weight: 600;
+  }
+}
+.uebermich .uebermich_container .avatar_icon {
+  height: 40rem;
+  margin-top: 7rem;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,35 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 62.5%; /* Font normaliserung 10PX = 1rem */
+    min-width: 570px; /* Minimum width for the site */
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 2rem;
+}
+
+/* === SECTION-SPACING === */
+section + section {
+    margin-top: 8rem;
+}
+
+section {
+    scroll-margin-top: 6rem;
+}
